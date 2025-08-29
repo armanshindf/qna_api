@@ -18,6 +18,7 @@ PGAdmin: http://localhost:5050 (email: admin@example.com, password: admin)
   
     а) Скрипт: chmod +x scripts/start-prod.sh
 ./scripts/start-prod.sh
+
     б) docker-compose -f docker-compose.prod.yml up --build -d  
 2. Если не подтянутся миграции:  
 docker-compose -f docker-compose.prod.yml exec web alembic upgrade head  

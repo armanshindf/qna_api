@@ -10,16 +10,14 @@
     а) Запустить скрипт chmod +x scripts/start-dev.sh
 ./scripts/start-dev.sh  
 
-    б) docker-compose -f docker-compose.dev.yml up --build  
-Приложение по адресу:  http://localhost:8000  
-Документация: http://localhost:8000/docs  
+    б) docker-compose -f docker-compose.dev.yml up --build
+Приложение по адресу:  http://localhost:8000
+Документация: http://localhost:8000/docs
 PGAdmin: http://localhost:5050 (email: admin@example.com, password: admin)  
-
-3. Прод:
+4. Прод:
   
     а) Скрипт: chmod +x scripts/start-prod.sh
 ./scripts/start-prod.sh
-
     б) docker-compose -f docker-compose.prod.yml up --build -d  
 2. Если не подтянутся миграции:  
 docker-compose -f docker-compose.prod.yml exec web alembic upgrade head  
